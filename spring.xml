@@ -4,4 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="french" class="com.david.lesson2.French"></bean>
+	<bean id="zurassic" class="com.david.lesson3.Zurassic">
+	<property name="type" value="ARNITHOPORUS"></property>
+	<property name="version" value="3"></property>
+	</bean>
 </beans>
