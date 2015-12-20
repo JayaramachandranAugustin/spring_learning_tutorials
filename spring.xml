@@ -8,4 +8,18 @@
 	<property name="type" value="ARNITHOPORUS"></property>
 	<property name="version" value="3"></property>
 	</bean>
+	<bean id="student" class="com.david.lesson4.Student">
+	<property name="id" value="1"></property>
+	<property name="name" value="David"></property>
+	</bean>
+	<bean id="classroom" class="com.david.lesson4.ClassRoom">
+	<property name="student" ref="student"></property>
+	</bean>
+	<bean id="car" class="com.david.lesson5.Car" autowire="byName">
+	<property name="name" value="mercedes"></property>
+	</bean>
+	<bean id="wheel" class="com.david.lesson5.Wheel">
+	<property name="radius" value="10"></property>
+	<property name="rimType" value="type 1"></property>
+	</bean>
 </beans>
