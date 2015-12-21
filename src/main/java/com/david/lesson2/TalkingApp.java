@@ -4,7 +4,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class TalkingApp {
 	public static void main(String args[]) {
-		FileSystemXmlApplicationContext context=new FileSystemXmlApplicationContext("spring.xml");
+		FileSystemXmlApplicationContext context=new FileSystemXmlApplicationContext("lesson2.xml");
 		//French french=(French)context.getBean("french");
 		French french=context.getBean(French.class);
 		french.speak();

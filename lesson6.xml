@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="australia" class="com.david.lesson6.Australia">
+	<property name="captain" value="Steven Smith"></property>
+	<property name="noOfPlayers" value="15"></property>
+	</bean>
+	<bean id="india" class="com.david.lesson6.India">
+	<property name="captain" value="MS Dhoni"></property>
+	<property name="noOfPlayers" value="15"></property>
+	</bean>
+	<bean id="odi" class="com.david.lesson6.ODI" autowire="byType">
+	<property name="venue" value="Melbourne"></property>
+	</bean>
+</beans>
