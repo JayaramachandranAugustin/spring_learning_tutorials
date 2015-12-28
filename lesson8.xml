@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="computer" class="com.david.lesson8.Computer">
+	<property name="bit" value="64"></property>
+	<property name="harddiskSize" value="750"></property>
+	<property name="ramMemory" value="8"></property>
+	</bean>
+	<bean id="laptop" class="com.david.lesson8.Laptop" parent="computer">
+	<property name="batteryBackup" value="2.5hrs"></property>
+	</bean>
+</beans>

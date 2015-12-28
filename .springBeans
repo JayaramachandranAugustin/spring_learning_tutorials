@@ -12,6 +12,9 @@
 		<config>lesson4.xml</config>
 		<config>lesson5.xml</config>
 		<config>lesson6.xml</config>
+		<config>lesson7.xml</config>
+		<config>lesson8.xml</config>
+		<config>lesson9.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>java:com.example.SpringLearningTutorialApplication</config>
